@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900%display=swap');
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+ background: rgb(178, 241, 205);
+ display: flex; 
+ justify-content: center;
+ align-items: center;
+ min-height: 100vh;
+}
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 100px;
+    background: #fff;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+}
+.container .left_side
+{
+    position: relative;
+    background: #1C6758;
+    padding: 40px;
+}
+
+.profiletext{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.profiletext .imgbx{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profiletext .imgbx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+ .title{
+    background-color: #062c0d;
+    width: 122%;
+    padding: 10px 10px 10px 10px;
+    color: #fff;
+    text-align: left;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.title::before{
+    content: "";
+    background-color: #062c0d;
+    position: absolute;
+    width: 40px;
+    height: 49px;
+    left: -40px;
+    bottom: 0;
+    
+}
+
+  .title::after{
+    content: " ";
+    position: absolute;
+    right: 0;
+    bottom: -9px;
+    background-color: #0c3f15;
+    width: 16px;
+    height: 10px;
+    clip-path: polygon(100% 0, 0 0, 0 100%);
+  }
+ 
+.profiletext h2{
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.profiletext h2 span{
+    font-size: 0.8em;
+}
+.contactInfo {
+    padding-top: 40px;
+}
+
+.contactInfo ul{
+    position: relative;
+}
+.contactInfo ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px;
+    cursor: pointer;
+}
+.contactInfo ul li .icon{
+  display: inline-block;
+  width: 30px;
+  font-size: 18px;
+  color:#28b442;
+}
+.contactInfo ul li span{
+    color: #fff;
+    font-weight: 300;
+}
+.education li{
+    margin-bottom: 15px;
+}
+.education h5{
+    color:#28b442;
+    font-weight: 500;
+}
+.education h4{
+    color: #fff;
+    font-weight: 300;
+}
+.language .percent{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #081921;
+    display: block;
+    margin-top: 5px;
+}
+.language .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #28b442 ;
+}
+.container .right-side{
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+.about{
+    margin-bottom: 50px;
+}
+.hr{
+    color: #A7FFE4;
+}
+.title2{
+    color: #003147;
+    margin-left: 30px ;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+.about p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left:  40px;
+    margin-right: 60px;
+}
+.box .creativity {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+    min-width: 150px;
+}
+
+.box .creativity h4{
+    margin-right: 10px;
+    margin-left: 20px;
+    text-transform: uppercase;
+    color: #003147;
+    font-weight: 600;
+}
+
+.skills .text{
+    margin-left: 30px;
+    text-transform: uppercase;
+    color: #848c99;
+    font-weight: 500;
+    font-size: 20px;
+}
+.skills .percent{
+    position: relative;
+    width: 90%;
+    height: 6px;
+    background: #58595a;
+    display: block;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+.skills .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #28b442 ;
+}
